@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image mapping</title>
+    <style>
+        img{
+            margin: 10px auto;
+        }
+        .container{
+            width: 900px;
+            height:900px;
+            margin: 100px auto;
+           
+          
+            
+        }
+        .images img{
+            width:4px;
+            height :2.4px;
+            position: absolute;
+            top:70%;
+            left:50%;
+      
+        }
+       
+  
+    </style>
+    <script>
+
+        function hello(y)
+        {
+            var x=document.getElementById(y);
+            x.style.display="block";
+            x.style.transform = "scale(200,200)";
+             x.style.transition = "3s transform";
+            
+            
+            
+
+        }
+         function hello2(y) {
+                var x = document.getElementById(y);
+                x.style.transform="inherit";
+               
+      
+
+
+            }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <map name="chet">
+            <area shape="rect" coords="455,294,558,334" href="javascript:void(0)" alt="" onmouseover="hello('lib')" onmouseout="hello2('lib')">
+            <area shape="rect" coords="524,411,614,451" href="javascript:void(0)" alt="" onmouseover="hello('computer')" onmouseout="hello2('computer')">
+            <area shape="rect" coords="555,488,595,577" href="javascript:void(0)" alt="" onmouseover="hello('eed')" onmouseout="hello2('eed')">
+            <area shape="rect" coords="700,190,802,238" href="javascript:void(0)" alt="" onmouseover="hello('girl')" onmouseout="hello2('girl')">
+            <area shape="circle" coords="648,651,70" href="javascript:void(0)" alt="" onmouseover="hello('chock')" onmouseout="hello2('chock')">
+            <area shape="rect" coords="153,457,316,508" href="javascript:void(0)" alt="" onmouseover="hello('tp')" onmouseout="hello2('tp')">
+            <area shape="rect" coords="448,597,552,637" href="javascript:void(0)" alt="" onmouseover="hello('ccn')" onmouseout="hello2('ccn')">
+            <area shape="rect" coords="19,657,138,740" href="javascript:void(0)" alt="" onmouseover="hello('boyshostel')" onmouseout="hello2('boyshostel')">
+            <area shape="rect" coords="202,692,306,732" href="javascript:void(0)" alt="" onmouseover="hello('admin')"
+                onmouseout="hello2('admin')">
+           
+
+        </map>
+        <img src="./image/NIT 3X3 A copy (1).jpg" alt="" usemap="#chet">
+        <div class="images">
+        
+            <img src="./image/computer.jpg" id="computer">
+            <img src="./image/lib.jpg" id="lib">
+            <img src="./image/EED_Entrance.jpg" id="eed">
+            <img src="./image/girls hostel.jpg" id="girl">
+            <img src="./image/chock.jpg" id="chock">
+            <img src="./image/t and p.jpeg" id="tp">
+            <img src="./image/ccn.jpg" id="ccn">
+                <img src="./image/main gate.PNG" id="boyshostel">
+                <img src="/maping/image/adminis.jpg" id="admin">
+
+    </img>
+       
+    </div>
+    <br><br><br>
+    <a href="#top">go to top</a><br>
+    <a href="../photo gallery/index.html">go to next page</a><br>
+    <a href="./mapping.html">go to next experiment</a><br>
+    <a href="./mapping.html" target="_parent">go to home page</a>
+   
+    
+    
+</body>
+</html>
